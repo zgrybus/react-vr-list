@@ -1,0 +1,21 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "baseUrl": "src",
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "target": "ES5",
+    "jsx": "react",
+    "strict": true,
+    "noImplicitAny": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "outDir": "./dist/esm/"
+  },
+  "exclude": ["node_modules"],
+}
