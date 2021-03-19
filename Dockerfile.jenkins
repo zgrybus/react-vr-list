@@ -1,6 +1,0 @@
-FROM jenkins/jenkins:2.283
-
-ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
-COPY config/jenkins_dependencies.txt /usr/share/jenkins/ref/jenkins_dependencies.txt
-
-RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/jenkins_dependencies.txt
