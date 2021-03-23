@@ -2,9 +2,10 @@ version: '3.3'
 
 services:
   jenkins:
-    build:
-      context: .
-      dockerfile: Dockerfile.jenkins
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile.jenkins
+    image: jenkins/jenkins:2.283
     privileged: true
     user: root
     ports:

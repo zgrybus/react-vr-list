@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Building') {
       steps {
-        sh 'docker build -t jenkins_react_drap_and_drop_app .'
+        sh 'docker build -t jenkins_react-vr-list .'
       }
     }
   }
