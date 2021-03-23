@@ -1,4 +1,4 @@
 import { ReactVRList } from './hooks/useReactVRList';
 
-console.log('x')
+console.log('xx')
 export const useReactVRList = ReactVRList.useReactVRList
