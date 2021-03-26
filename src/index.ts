@@ -1,3 +1,3 @@
 import { ReactVRList } from './hooks/useReactVRList';
 
-export const useReactVRList = ReactVRList.useReactVRList
+export const useReactVRList = ReactVRList.useReactVRList;

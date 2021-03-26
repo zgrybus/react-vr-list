@@ -1,7 +1,7 @@
-import { commonA } from "common"
+import { commonA } from 'common';
 
-describe('Index',() => {
+describe('Index', () => {
   it('should be true', () => {
-    expect(commonA).toBe(5)
-  })
-})
+    expect(commonA).toBe(5);
+  });
+});

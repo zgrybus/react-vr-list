@@ -9,6 +9,8 @@
   "devDependencies": {
     "@types/jest": "^26.0.20",
     "@types/react": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
     "awesome-typescript-loader": "^5.2.1",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
@@ -28,7 +30,7 @@
   },
   "scripts": {
     "start": "webpack serve --mode=development",
-    "lint": "eslint",
+    "lint": "eslint --ext .ts,.tsx ./src",
     "test": "jest --silent",
     "test:watch": "jest --silent --watch",
     "build": "webpack --mode=production"
