@@ -15,5 +15,6 @@ COPY . .
 
 EXPOSE 3000
 
+RUN npm run lint
 RUN npm run test
 RUN npm run build
