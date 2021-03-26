@@ -1,17 +1,22 @@
 {
+  "include": ["src"],
   "compilerOptions": {
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "target": "ES5",
     "baseUrl": "src",
     "jsx": "react",
-    "module": "commonjs",
+    "strict": true,
     "noImplicitAny": true,
     "preserveConstEnums": true,
     "removeComments": true,
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "sourceMap": true,
-    "target": "es5"
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationDir": "./dist/typings/",
+    "outDir": "./dist/esm/"
   },
   "exclude": ["node_modules"],
-  "include": [
-    "src/**/*.ts", "src/**/*.tsx", "test/**/*.ts"
-  ]
 }

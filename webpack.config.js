@@ -4,9 +4,13 @@ const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 module.exports = {
   entry: './src/index.ts',
   target: 'web',
+  devtool: 'source-map',
   output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js',
+    path: path.resolve(__dirname, "./dist/umd"),
+    filename: "[name].js", // index.js
+    library: "react-vr-list", // aka window.myLibrary
+    libraryTarget: "umd",
+    globalObject: "this"
   },
   module: {
     rules: [
@@ -14,6 +18,9 @@ module.exports = {
         exclude: /\.spec.tsx?$/,
         test: /\.(ts|tsx)$/,
         loader: 'awesome-typescript-loader',
+        options: {
+          transpileOnly: false
+        }
       },
       {
         enforce: 'pre',

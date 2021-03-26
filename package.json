@@ -2,7 +2,12 @@
   "name": "react-vr-list",
   "version": "0.0.1",
   "description": "Useful hook for efficiently rendering large lists",
-  "main": "src/index.ts",
+  "main": "./dist/umd/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/typings/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "react": "^17.0.1"
   },
@@ -33,7 +38,7 @@
     "lint": "eslint --ext .ts,.tsx ./src",
     "test": "jest --silent",
     "test:watch": "jest --silent --watch",
-    "build": "webpack --mode=production"
+    "build": "tsc -p ./tsconfig.build.json && webpack --mode=production"
   },
   "repository": {
     "type": "git",
