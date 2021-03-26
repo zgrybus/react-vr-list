@@ -28,6 +28,6 @@ Despite that there are a lot of virtual-list libraries, I decided to create anot
 #### Scrolling the the specified:
 
 - [ ] Row
-- [ ] offsetTop
+- [ ] OffsetTop
 
-**Any wishes? PM me!**
+##### **Anything else? PM ME!**

@@ -1,10 +1,10 @@
 {
   "include": ["src"],
   "compilerOptions": {
+    "baseUrl": "src",
     "module": "esnext",
     "lib": ["dom", "esnext"],
     "target": "ES5",
-    "baseUrl": "src",
     "jsx": "react",
     "strict": true,
     "noImplicitAny": true,
@@ -15,7 +15,6 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "declaration": true,
-    "declarationDir": "./dist/typings/",
     "outDir": "./dist/esm/"
   },
   "exclude": ["node_modules"],
