@@ -7,8 +7,8 @@ module.exports = {
   devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, "./dist/umd"),
-    filename: "[name].js", // index.js
-    library: "react-vr-list", // aka window.myLibrary
+    filename: "index.js", 
+    library: "react-vr-list",
     libraryTarget: "umd",
     globalObject: "this"
   },
@@ -28,6 +28,9 @@ module.exports = {
         loader: 'source-map-loader',
       },
     ],
+  },
+  optimization: {
+    minimize: false
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],

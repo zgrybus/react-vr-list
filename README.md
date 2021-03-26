@@ -2,11 +2,11 @@
 
 # About project
 
-:boom: Useful **hook** for efficiently rendering large lists :boom:
+:boom: Useful **hook** for efficiently rendering large lists:boom:
 
 Having troubles? Create an [issue](https://github.com/zgrybus/react-vr-list/issues/new)
 
-##### Why another virtual-list library?
+### Why another virtual-list library?
 
 Despite that there are a lot of virtual-list libraries, I decided to create another one. I used to work with [react-window](https://github.com/bvaughn/react-window), [react-virtualized](https://github.com/bvaughn/react-virtualized) and [react-virtual](https://github.com/tannerlinsley/react-virtual).
 
@@ -18,14 +18,14 @@ Despite that there are a lot of virtual-list libraries, I decided to create anot
 
 ## TO DO
 
-##### Provide hook for rendering:
+#### Provide hook for rendering:
 
 - [ ] Fixed rows
 - [ ] Dynamic rows ( with provided height )
 - [ ] Unknown rows height :fire:
 - [ ] Nested lists :fire:
 
-##### Scrolling the the specified:
+#### Scrolling the the specified:
 
 - [ ] Row
 - [ ] offsetTop
